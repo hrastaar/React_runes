@@ -2,8 +2,9 @@
   "name": "react_runes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/React-Runes",
+  "homepage": "https://auraofdivinity.github.io/React-runes",
   "dependencies": {
+    "leaguejs": "^2.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
@@ -14,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
