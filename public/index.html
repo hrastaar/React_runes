@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+</head>
+
+<body>
+  <div class="s013">
+    <form>
+      <fieldset>
+        <legend>RUNE SNEAKER</legend>
+      </fieldset>
+      <div class="inner-form">
+        <div class="left">
+          <div class="input-wrap first">
+            <div class="input-field first">
+              <label>USERNAME</label>
+              <input type="text" placeholder="ex: food, service, bar, hotel" />
+            </div>
+          </div>
+        </div>
+        <button class="btn-search" type="button" onclick="bClick()">SEARCH</button>
+      </div>
+    </form>
+
+  </div>
+  <div id="root" style="display:none;"></div>
+  <script src="js/extention/choices.js"></script>
+  <script>
+    const choices = new Choices('[data-trigger]', {
+      searchEnabled: false,
+      itemSelectText: '',
+    });
+
+    function bClick() {
+      fetch(
+        'https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Dyrus?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54'
+      ).then(response => {
+        console.log(response)
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
+  </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
