@@ -41,7 +41,7 @@
     function bClick() {
 
       fetch(
-          'https://corsproxy2213.herokuapp.com/?q=https://eun1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54'
+          'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/FVGodfather?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54'
         )
         .then(res => res.json())
         .then(json => console.log(json))

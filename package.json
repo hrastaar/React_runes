@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://auraofdivinity.github.io/React-runes",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "leaguejs": "^2.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
