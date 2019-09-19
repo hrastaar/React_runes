@@ -38,15 +38,48 @@
       itemSelectText: '',
     });
 
-    function bClick() {
+    // function bClick() {
 
-      fetch(
-          'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/FVGodfather?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54'
-        )
-        .then(res => res.json())
-        .then(json => console.log(json))
+    //   fetch(
+    //       'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/FVGodfather?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54'
+    //     )
+    //     .then(res => res.json())
+    //     .then(json => console.log(json))
+
+    //   document.getElementById('root').style.display = 'block';
+    // }
+    summonerObject = null
+
+    const bClick = function () {
+      loadData().then(res => {
+        summonerObject = res
+      })
+
+    }
+
+
+    function loadData() {
+      const url =
+        'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/FVGodfather?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54';
+      //implement fetch here
+      return new Promise(function (resolve, reject) {
+        var req = new XMLHttpRequest();
+        req.open('GET', url)
+
+        req.onload = function () {
+          if (req.status == 200) {
+            document.getElementById('root').style.display = 'block'
+            resolve(req.response)
+          } else {
+
+            reject(alert("The summoner you serached for doesn't appear to be in a game"))
+          }
+        };
+        req.send();
+      });
     }
   </script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
