@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-runes/static/css/main.2cce8147.chunk.css",
-    "main.js": "/React-runes/static/js/main.dab29728.chunk.js",
-    "main.js.map": "/React-runes/static/js/main.dab29728.chunk.js.map",
+    "main.css": "/React-runes/static/css/main.c6577432.chunk.css",
+    "main.js": "/React-runes/static/js/main.23c46fe1.chunk.js",
+    "main.js.map": "/React-runes/static/js/main.23c46fe1.chunk.js.map",
     "runtime~main.js": "/React-runes/static/js/runtime~main.7e06ca4e.js",
     "runtime~main.js.map": "/React-runes/static/js/runtime~main.7e06ca4e.js.map",
-    "static/js/2.d6c30f2a.chunk.js": "/React-runes/static/js/2.d6c30f2a.chunk.js",
-    "static/js/2.d6c30f2a.chunk.js.map": "/React-runes/static/js/2.d6c30f2a.chunk.js.map",
+    "static/js/2.679839a3.chunk.js": "/React-runes/static/js/2.679839a3.chunk.js",
+    "static/js/2.679839a3.chunk.js.map": "/React-runes/static/js/2.679839a3.chunk.js.map",
     "index.html": "/React-runes/index.html",
-    "precache-manifest.f41281e47ee489eb7f110cefc9031124.js": "/React-runes/precache-manifest.f41281e47ee489eb7f110cefc9031124.js",
+    "precache-manifest.f8c4f8d0e447a9b9889df2babf4216e4.js": "/React-runes/precache-manifest.f8c4f8d0e447a9b9889df2babf4216e4.js",
     "service-worker.js": "/React-runes/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/React-runes/static/css/main.2cce8147.chunk.css.map",
+    "static/css/main.c6577432.chunk.css.map": "/React-runes/static/css/main.c6577432.chunk.css.map",
     "static/media/logo.svg": "/React-runes/static/media/logo.5d5d9eef.svg"
   }
 }
