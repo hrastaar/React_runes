@@ -50,34 +50,35 @@
     // }
     summonerObject = null
 
-    const bClick = function () {
-      loadData().then(res => {
-        summonerObject = res
-      })
+    // const bClick = function () {
+    //   loadData().then(res => {
+    //     summonerObject = res
+    //   })
 
-    }
+    // }
 
 
-    function loadData() {
-      const url =
-        'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/FVGodfather?api_key=RGAPI-9a792768-5db6-48db-b470-911728f89b54';
-      //implement fetch here
-      return new Promise(function (resolve, reject) {
-        var req = new XMLHttpRequest();
-        req.open('GET', url)
+    // function loadData() {
+    //   const url =
+    //     'https://corsproxy2213.herokuapp.com/?q=https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-77f1c292-674d-4fdd-8ecc-a495a3bdbf01';
+    //   //implement fetch here
+    //   return new Promise(function (resolve, reject) {
+    //     var req = new XMLHttpRequest();
+    //     req.open('GET', url)
 
-        req.onload = function () {
-          if (req.status == 200) {
-            document.getElementById('root').style.display = 'block'
-            resolve(req.response)
-          } else {
+    //     req.onload = function () {
+    //       if (req.status == 200) {
+    //         console.log(req.response)
+    //         document.getElementById('root').style.display = 'block'
+    //         resolve(req.response)
+    //       } else {
 
-            reject(alert("The summoner you serached for doesn't appear to be in a game"))
-          }
-        };
-        req.send();
-      });
-    }
+    //         reject(alert("The summoner you serached for doesn't appear to be in a game"))
+    //       }
+    //     };
+    //     req.send();
+    //   });
+    // }
   </script>
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
